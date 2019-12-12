@@ -1,8 +1,11 @@
 # pi-server
-Raspberry PI Server setup
+Raspberry PI Server setup checklist and best practices.
 
-**Before boot**\
-Enable SSH and WIFI credentials: [Setting up a Raspberry Pi headless](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)
+## Installation and security
+[Headless setup](https://github.com/eremt/pi-server/blob/master/docs/headless.md)\
+[Replace default user](https://github.com/eremt/pi-server/blob/master/docs/user.md)
 
-**After boot**\
-Replace default user, disable password, firewall, etc.: [Securing your Raspberry Pi](https://www.raspberrypi.org/documentation/configuration/security.md)
+More security setups such as firewall and fail2ban: [Securing your Raspberry Pi](https://www.raspberrypi.org/documentation/configuration/security.md)
+
+## Packages
+[Docker and docker-compose](https://github.com/eremt/pi-server/blob/master/docs/docker.md)
