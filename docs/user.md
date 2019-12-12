@@ -1,9 +1,9 @@
-# User
+# User setup
 On first boot login on the default user `pi`.
 ```bash
 ssh pi@<IP-ADDRESS>
 ```
-You will be promted to enter the password. By default this is `raspberry`.
+You will be promted to enter the password, the default is `raspberry`.
 
 Once logged in start by updating Raspbian.
 ```bash
@@ -48,3 +48,5 @@ Save the file and restart the ssh system.
 ```bash
 sudo service ssh reload
 ```
+
+Now that you have a user you can go to the next step: [Firewall](https://github.com/eremt/pi-server/blob/master/docs/firewall.md).

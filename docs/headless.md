@@ -20,4 +20,4 @@ network={
  psk="<WiFi Password>"
 }
 ```
-Now you can start the Raspberry PI and go to the next step: [Replace default user](https://github.com/eremt/pi-server/blob/master/docs/user.md).
+Now you can start the Raspberry PI and go to the next step: [User setup](https://github.com/eremt/pi-server/blob/master/docs/user.md).
