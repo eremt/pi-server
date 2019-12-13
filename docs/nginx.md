@@ -6,5 +6,34 @@ sudo apt install nginx
 ```
 Start the server.
 ```bash
-sudo /etc/init.d/nginx start
+sudo service nginx start
+```
+## Configure a site
+Create a configuration file for a domain.
+```bash
+sudo nano /etc/nginx/sites-available/<DOMAIN NAME>
+```
+Paste the content below.
+```bash
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name <DOMAIN NAME>;
+
+	root /srv/www/<DOMAIN NAME>;
+	index index.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
+```
+Symlink the configuration to `/etc/nginx/sites-enabled` to enable it.
+```bash
+sudo ln -s /etc/nginx/sites-available/<DOMAIN NAME> /etc/nginx/sites-enabled/<DOMAIN NAME>
+```
+Restart `nginx`.
+```bash
+sudo service nginx restart
 ```
