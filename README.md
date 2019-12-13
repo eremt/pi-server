@@ -8,4 +8,5 @@ Raspberry PI server setup checklist and best practices.
 
 ## Packages and tools
 [NGINX](https://github.com/eremt/pi-server/blob/master/docs/nginx.md)\
+[SSL with Let's Encrypt](https://github.com/eremt/pi-server/blob/master/docs/ssl.md)\
 [Docker](https://github.com/eremt/pi-server/blob/master/docs/docker.md)
