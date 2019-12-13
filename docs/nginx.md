@@ -16,17 +16,17 @@ sudo nano /etc/nginx/sites-available/<DOMAIN NAME>
 Paste the content below.
 ```bash
 server {
-	listen 80;
-	listen [::]:80;
+  listen 80;
+  listen [::]:80;
 
-	server_name <DOMAIN NAME>;
+  server_name <DOMAIN NAME>;
 
-	root /srv/www/<DOMAIN NAME>;
-	index index.html;
+  root /srv/www/<DOMAIN NAME>;
+  index index.html;
 
-	location / {
-		try_files $uri $uri/ =404;
-	}
+  location / {
+    try_files $uri $uri/ =404;
+  }
 }
 ```
 Symlink the configuration to `/etc/nginx/sites-enabled` to enable it.
