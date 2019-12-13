@@ -1,0 +1,8 @@
+#!/bin/sh
+echo '# Optimizations for headless server'
+echo '# free up memory for CPU'
+echo 'gpu_mem=32'
+echo '# Disable Bluetooth'
+echo 'dtoverlay=disable-bt'
+echo '# Disable WiFi'
+echo '#dtoverlay=disable-wifi'
