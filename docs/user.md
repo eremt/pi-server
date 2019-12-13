@@ -29,6 +29,14 @@ Then remove the user and its home directory. This might break some functionality
 ```bash
 sudo deluser -remove-home pi
 ```
+## Force sudo to require a password
+```bash
+sudo nano /etc/sudoers.d/010_pi-nopasswd
+```
+Replace `pi` with your new user.
+```bash
+<USERNAME> ALL=(ALL) PASSWD: ALL
+```
 ## SSH login
 Run `ssh-copy-id` on the computer that hosts your public key to copy it to the Raspberry pi.
 ```bash
