@@ -6,6 +6,9 @@ Raspberry PI server setup checklist and best practices.
 [User setup](https://github.com/eremt/pi-server/blob/master/docs/user.md)\
 [Firewall](https://github.com/eremt/pi-server/blob/master/docs/firewall.md)
 
+## Configuration
+[Optimize server](https://github.com/eremt/pi-server/blob/master/docs/config.md)
+
 ## Packages and tools
 [NGINX](https://github.com/eremt/pi-server/blob/master/docs/nginx.md)\
 [SSL with Let's Encrypt](https://github.com/eremt/pi-server/blob/master/docs/ssl.md)\
