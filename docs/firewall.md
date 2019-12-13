@@ -11,3 +11,12 @@ Then enable the firewall and ensure it starts on boot.
 ```bash
 sudo ufw enable
 ```
+
+## Open ports
+To allow traffic on ports 80 or 443.
+```bash
+sudo ufw allow http
+```
+```bash
+sudo ufw allow https
+```
