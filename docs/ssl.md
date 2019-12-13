@@ -1,5 +1,5 @@
 # Let's encrypt
-Before using certbot configure at least one site or certbot will overwrite the default configuration file. There's an example configuration in the [NGINX section](https://github.com/eremt/pi-server/blob/master/docs/nginx.md).
+Before using certbot configure at least one site or certbot will overwrite the default configuration file. There's an example configuration in the [NGINX section](https://github.com/eremt/pi-server/blob/master/docs/nginx.md#configure-a-site).
 
 Install certbot and dependencies.
 ```bash
