@@ -8,6 +8,8 @@ Add user to the "docker" group.
 ```bash
 sudo usermod -aG docker <USERNAME>
 ```
+Logout and log back in for the changes to take effect.
+
 Test Docker installation.
 ```bash
 docker run hello-world
