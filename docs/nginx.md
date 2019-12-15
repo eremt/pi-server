@@ -20,6 +20,8 @@ server {
   listen [::]:80;
 
   server_name <DOMAIN NAME>;
+  gzip on;
+  gzip_types text/plain text/css application/javascript;
 
   root /srv/www/<DOMAIN NAME>;
   index index.html;
