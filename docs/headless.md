@@ -1,15 +1,9 @@
 # Headless setup
 ## SSH
-To enable SSH create a file called `ssh` in the /boot directory.
-```bash
-touch ssh
-```
+To enable SSH all you have to do is create an empty file called `ssh` in the /boot directory.
+
 ## WiFi
-For optional WiFi setup, create a file called `wpa_supplicant.conf` in the /boot directory.
-```bash
-nano wpa_supplicant.conf
-```
-Paste the following contents and replace country, ssid and psk values.
+If you want WiFi create a file called `wpa_supplicant.conf` in the /boot directory with the following contents, replace country, ssid and psk:
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -20,4 +14,5 @@ network={
  psk="<WiFi Password>"
 }
 ```
-Now you can start the Raspberry PI and go to the next step: [User setup](https://github.com/eremt/pi-server/blob/master/docs/user.md).
+
+Next you can setup your PI to [boot from USB](https://github.com/eremt/pi-server/blob/master/docs/boot-usb.md) or start securing it by [removing the default user](https://github.com/eremt/pi-server/blob/master/docs/user.md).
