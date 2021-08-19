@@ -25,7 +25,7 @@ And uncomment the  last line:
 dtoverlay=disable-wifi
 ```
 
-## PoE Hat fan speed
+## PoE HAT fan speed
 If using the PoE Hat the fans can get a little noisy. To change this run this command:
 ```bash
 curl -s https://raw.githubusercontent.com/eremt/pi-server/master/configs/poe-fan-speed | sudo tee -a /boot/config.txt
