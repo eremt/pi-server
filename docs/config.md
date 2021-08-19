@@ -1,7 +1,7 @@
 # Server configuration
 
 ## Headless server optimization
-Run this command.
+A server doesn't need everything the Raspberry Pi offers. Run this command:
 ```bash
 curl -s https://raw.githubusercontent.com/eremt/pi-server/master/configs/headless-optimizations | sudo tee -a /boot/config.txt
 ```
@@ -15,11 +15,11 @@ dtoverlay=disable-bt
 # disable WiFi
 #dtoverlay=disable-wifi
 ```
-Note that disabling WiFi is commented out, if you're on Ethernet open `/boot/config.txt`.
+Note that disabling WiFi is commented out, if you're on Ethernet open `/boot/config.txt`:
 ```bash
 sudo nano /boot/config.txt
 ```
-And uncomment the  last line.
+And uncomment the  last line:
 ```bash
 # disable WiFi
 dtoverlay=disable-wifi
@@ -32,11 +32,11 @@ curl -s https://raw.githubusercontent.com/eremt/pi-server/master/configs/poe-fan
 ```
 This will append these lines to `/boot/config.txt`:
 ```bash
-# PoE Hat fan speed
+# PoE HAT fan speed
 dtparam=poe_fan_temp0=50000
-dtparam=poe_fan_temp1=60000
-dtparam=poe_fan_temp2=70000
-dtparam=poe_fan_temp3=80000
+dtparam=poe_fan_temp1=55000
+dtparam=poe_fan_temp2=60000
+dtparam=poe_fan_temp3=65000
 ```
 Each entry represents a fan speed and what temperature triggers it. `50000` means 50°C and so on.
 
