@@ -1,5 +1,4 @@
 
-
 # PoE Hat fan speed
 dtparam=poe_fan_temp0=50000
 dtparam=poe_fan_temp1=60000
